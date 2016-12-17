@@ -1,6 +1,6 @@
 import wpi from 'wiring-pi';
 
-export default blinkLED = () => {
+ const blinkLED = () => {
     wpi.setup("gpio");
 
     const pin = 12;
@@ -18,3 +18,5 @@ export default blinkLED = () => {
 
     wpi.digitalWrite(pin, 0);
 };
+
+export default blinkLED;
